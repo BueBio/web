@@ -1,0 +1,130 @@
+.content-header{
+    padding: 0 13%;
+    height: 6.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-color);
+
+    .logo{
+        width: auto;
+    }
+
+    .btn-menu{
+        display: none;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        font-weight: 700;
+
+        li{
+            a{
+                color: var(--second-text-color);
+                text-decoration: none;
+                margin-right: 3vw;
+                font-size: 14px;
+
+                &:hover{
+                    color: var(--highlight-color);
+                }
+            }
+        }
+    }
+
+    .btn-gral{
+        img{
+            margin-left: .5rem;
+        }
+    }
+
+    .background-menu-mobile{
+        display: none;
+    }
+}
+
+@media(max-width: 992px){
+    .content-header{
+        padding: 0 1.5rem;
+
+        &.active-menu{
+            .background-menu-mobile{
+                display: block;
+            }
+
+            ul{
+                left: 0;
+            }
+
+            .btn-gral{
+                left: 0;
+            }
+        }
+
+        .background-menu-mobile{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: none;
+            border: none;
+            outline: none;
+        }
+
+        .btn-menu{
+            border: none;
+            outline: none;
+            display: block;
+            background-color: transparent;
+
+            img{
+                display: block;
+                height: 1.1rem;
+            }
+        }
+
+        ul{
+            position: fixed;
+            width: 80vw;
+            height: 100vh;
+            background-color: var(--highlight-color);
+            top: 0;
+            flex-direction: column;
+            margin-top: 0;
+            display: block;
+            left: -80vw;
+            transition: .4s ease-in-out all;
+            padding: 2rem 0rem;
+            margin: 0;
+
+            li{
+                a{
+                    color: white;
+                    padding: 1.5rem 0 1.5rem 3rem;
+                    display: block;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+                    &:hover{
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .btn-gral{
+            position: fixed;
+            width: 80vw;
+            background-color: var(--highlight-color);
+            bottom: 2rem;
+            border-radius: 0;
+            text-align: center;
+            margin: 0;
+            display: block;
+            left: -80vw;
+            transition: .4s ease-in-out all;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.content-stats{
+    padding: 2rem 13%;
+    display: flex;
+    justify-content: space-between;
+
+    .card{
+        flex: 1;
+        margin-right: 2rem;
+        padding: 4rem 0;
+        
+        &:last-child{
+            margin-right: 0;
+        }
+
+        h2{
+            color: var(--highlight-color);
+            font-size: 58px;
+            font-weight: 700;
+            line-height: 138%;
+            letter-spacing: 0.2px;
+            margin: 0;
+            text-align: center;
+        }
+
+        p{
+            font-size: 1rem;
+            line-height: 150%;
+            margin: 0;
+            letter-spacing: 0.1px;
+            color: var(--text-color);
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width: 992px){
+    .content-stats{
+        flex-direction: column;
+
+        .card{
+            margin: 0;
+            padding: 3rem 0;
+
+            h2{
+                font-size: 3rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.trade-content{
+    background-color: var(--background-color);
+    padding: 20vh 13% 5rem 13%;
+
+    .line{
+        width: 94px;
+        height: 7px;
+        background-color: var(--highlight-color);
+        display: block;
+        margin-bottom: 2.5rem;
+    }
+
+    h4{
+        color: var(--highlight-color);
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 150%;
+        margin: 0 0 2.5rem 0;
+    }
+
+    h2{
+        margin: 0;
+        line-height: 125%;
+        color: var(--text-color);
+        font-size: 2.8vw;
+    }
+
+    p{
+        margin: 0;
+        color: var(--second-text-color);
+        font-weight: 400;
+        margin: 2.5rem 0;
+    }
+}
+
+@media(max-width: 992px) {
+  .trade-content {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    h2 {
+      font-size: 1.3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: .9rem;
+    }
+
+    .btn-gral {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

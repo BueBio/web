@@ -1,0 +1,70 @@
+.liquidity-content {
+  padding: 20vh 13% 25vh 13%;
+  display: flex;
+
+  .left-side {
+    padding-right: 3.5rem;
+
+    .line {
+      width: 94px;
+      height: 7px;
+      background-color: var(--highlight-color);
+      display: block;
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      margin: 0;
+      line-height: 125%;
+      color: var(--text-color);
+      font-size: 2.8vw;
+    }
+
+    p {
+      margin: 0;
+      color: var(--second-text-color);
+      font-weight: 400;
+      margin: 2.5rem 0;
+    }
+
+  }
+
+  .right-side {
+    img {
+      width: auto;
+    }
+  }
+}
+
+@media(max-width: 992px) {
+  .liquidity-content {
+    flex-direction: column;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+
+    .left-side {
+      padding: 0 0 2rem 0;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: .9rem;
+      }
+
+      .btn-gral {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .right-side {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
